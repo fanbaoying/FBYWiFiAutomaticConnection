@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26589E242230BFA000C9C6D4 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26589E232230BFA000C9C6D4 /* NetworkExtension.framework */; };
+		269791EA222E6226004250BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 269791E9222E6226004250BD /* AppDelegate.m */; };
+		269791ED222E6226004250BD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 269791EC222E6226004250BD /* ViewController.m */; };
+		269791F0222E6226004250BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269791EE222E6226004250BD /* Main.storyboard */; };
+		269791F2222E622A004250BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 269791F1222E622A004250BD /* Assets.xcassets */; };
+		269791F5222E622A004250BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269791F3222E622A004250BD /* LaunchScreen.storyboard */; };
+		269791F8222E622A004250BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 269791F7222E622A004250BD /* main.m */; };
+		26979202222E622A004250BD /* FBYWiFiAutomaticConnectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26979201222E622A004250BD /* FBYWiFiAutomaticConnectionTests.m */; };
+		2697920D222E622A004250BD /* FBYWiFiAutomaticConnectionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2697920C222E622A004250BD /* FBYWiFiAutomaticConnectionUITests.m */; };
+		26979220222F6300004250BD /* NSString+NormalMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 2697921E222F6300004250BD /* NSString+NormalMethod.m */; };
+		26979223222F69A9004250BD /* SignalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26979221222F69A9004250BD /* SignalView.m */; };
+		26979227222F69F1004250BD /* SpeedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26979225222F69F1004250BD /* SpeedController.m */; };
+		2697922E222F6DE9004250BD /* signal_def.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 26979229222F6DE9004250BD /* signal_def.tiff */; };
+		2697922F222F6DE9004250BD /* pointer.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2697922A222F6DE9004250BD /* pointer.tiff */; };
+		26979230222F6DE9004250BD /* table.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2697922B222F6DE9004250BD /* table.tiff */; };
+		26979231222F6DE9004250BD /* Upload_def.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2697922C222F6DE9004250BD /* Upload_def.tiff */; };
+		26979232222F6DE9004250BD /* download_def.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2697922D222F6DE9004250BD /* download_def.tiff */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		269791FE222E622A004250BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 269791DD222E6226004250BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 269791E4222E6226004250BD;
+			remoteInfo = FBYWiFiAutomaticConnection;
+		};
+		26979209222E622A004250BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 269791DD222E6226004250BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 269791E4222E6226004250BD;
+			remoteInfo = FBYWiFiAutomaticConnection;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		26589E232230BFA000C9C6D4 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		269791E5222E6226004250BD /* FBYWiFiAutomaticConnection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBYWiFiAutomaticConnection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		269791E8222E6226004250BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		269791E9222E6226004250BD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		269791EB222E6226004250BD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		269791EC222E6226004250BD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		269791EF222E6226004250BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		269791F1222E622A004250BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		269791F4222E622A004250BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		269791F6222E622A004250BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		269791F7222E622A004250BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		269791FD222E622A004250BD /* FBYWiFiAutomaticConnectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FBYWiFiAutomaticConnectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26979201222E622A004250BD /* FBYWiFiAutomaticConnectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBYWiFiAutomaticConnectionTests.m; sourceTree = "<group>"; };
+		26979203222E622A004250BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26979208222E622A004250BD /* FBYWiFiAutomaticConnectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FBYWiFiAutomaticConnectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2697920C222E622A004250BD /* FBYWiFiAutomaticConnectionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBYWiFiAutomaticConnectionUITests.m; sourceTree = "<group>"; };
+		2697920E222E622A004250BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2697921D222E633D004250BD /* FBYWiFiAutomaticConnection.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FBYWiFiAutomaticConnection.entitlements; sourceTree = "<group>"; };
+		2697921E222F6300004250BD /* NSString+NormalMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NormalMethod.m"; sourceTree = "<group>"; };
+		2697921F222F6300004250BD /* NSString+NormalMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NormalMethod.h"; sourceTree = "<group>"; };
+		26979221222F69A9004250BD /* SignalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalView.m; sourceTree = "<group>"; };
+		26979222222F69A9004250BD /* SignalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalView.h; sourceTree = "<group>"; };
+		26979225222F69F1004250BD /* SpeedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeedController.m; sourceTree = "<group>"; };
+		26979226222F69F1004250BD /* SpeedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeedController.h; sourceTree = "<group>"; };
+		26979229222F6DE9004250BD /* signal_def.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = signal_def.tiff; sourceTree = "<group>"; };
+		2697922A222F6DE9004250BD /* pointer.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = pointer.tiff; sourceTree = "<group>"; };
+		2697922B222F6DE9004250BD /* table.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = table.tiff; sourceTree = "<group>"; };
+		2697922C222F6DE9004250BD /* Upload_def.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Upload_def.tiff; sourceTree = "<group>"; };
+		2697922D222F6DE9004250BD /* download_def.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = download_def.tiff; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		269791E2222E6226004250BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26589E242230BFA000C9C6D4 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		269791FA222E622A004250BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26979205222E622A004250BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		269791DC222E6226004250BD = {
+			isa = PBXGroup;
+			children = (
+				269791E7222E6226004250BD /* FBYWiFiAutomaticConnection */,
+				26979200222E622A004250BD /* FBYWiFiAutomaticConnectionTests */,
+				2697920B222E622A004250BD /* FBYWiFiAutomaticConnectionUITests */,
+				269791E6222E6226004250BD /* Products */,
+				2697921A222E6330004250BD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		269791E6222E6226004250BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				269791E5222E6226004250BD /* FBYWiFiAutomaticConnection.app */,
+				269791FD222E622A004250BD /* FBYWiFiAutomaticConnectionTests.xctest */,
+				26979208222E622A004250BD /* FBYWiFiAutomaticConnectionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		269791E7222E6226004250BD /* FBYWiFiAutomaticConnection */ = {
+			isa = PBXGroup;
+			children = (
+				26979224222F69DB004250BD /* FBYData */,
+				2697921D222E633D004250BD /* FBYWiFiAutomaticConnection.entitlements */,
+				269791E8222E6226004250BD /* AppDelegate.h */,
+				269791E9222E6226004250BD /* AppDelegate.m */,
+				269791EB222E6226004250BD /* ViewController.h */,
+				269791EC222E6226004250BD /* ViewController.m */,
+				269791EE222E6226004250BD /* Main.storyboard */,
+				269791F1222E622A004250BD /* Assets.xcassets */,
+				269791F3222E622A004250BD /* LaunchScreen.storyboard */,
+				269791F6222E622A004250BD /* Info.plist */,
+				269791F7222E622A004250BD /* main.m */,
+			);
+			path = FBYWiFiAutomaticConnection;
+			sourceTree = "<group>";
+		};
+		26979200222E622A004250BD /* FBYWiFiAutomaticConnectionTests */ = {
+			isa = PBXGroup;
+			children = (
+				26979201222E622A004250BD /* FBYWiFiAutomaticConnectionTests.m */,
+				26979203222E622A004250BD /* Info.plist */,
+			);
+			path = FBYWiFiAutomaticConnectionTests;
+			sourceTree = "<group>";
+		};
+		2697920B222E622A004250BD /* FBYWiFiAutomaticConnectionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2697920C222E622A004250BD /* FBYWiFiAutomaticConnectionUITests.m */,
+				2697920E222E622A004250BD /* Info.plist */,
+			);
+			path = FBYWiFiAutomaticConnectionUITests;
+			sourceTree = "<group>";
+		};
+		2697921A222E6330004250BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26589E232230BFA000C9C6D4 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		26979224222F69DB004250BD /* FBYData */ = {
+			isa = PBXGroup;
+			children = (
+				26979228222F6DDD004250BD /* image */,
+				26979226222F69F1004250BD /* SpeedController.h */,
+				26979225222F69F1004250BD /* SpeedController.m */,
+				26979222222F69A9004250BD /* SignalView.h */,
+				26979221222F69A9004250BD /* SignalView.m */,
+				2697921F222F6300004250BD /* NSString+NormalMethod.h */,
+				2697921E222F6300004250BD /* NSString+NormalMethod.m */,
+			);
+			path = FBYData;
+			sourceTree = "<group>";
+		};
+		26979228222F6DDD004250BD /* image */ = {
+			isa = PBXGroup;
+			children = (
+				2697922D222F6DE9004250BD /* download_def.tiff */,
+				2697922A222F6DE9004250BD /* pointer.tiff */,
+				26979229222F6DE9004250BD /* signal_def.tiff */,
+				2697922B222F6DE9004250BD /* table.tiff */,
+				2697922C222F6DE9004250BD /* Upload_def.tiff */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		269791E4222E6226004250BD /* FBYWiFiAutomaticConnection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26979211222E622A004250BD /* Build configuration list for PBXNativeTarget "FBYWiFiAutomaticConnection" */;
+			buildPhases = (
+				269791E1222E6226004250BD /* Sources */,
+				269791E2222E6226004250BD /* Frameworks */,
+				269791E3222E6226004250BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FBYWiFiAutomaticConnection;
+			productName = FBYWiFiAutomaticConnection;
+			productReference = 269791E5222E6226004250BD /* FBYWiFiAutomaticConnection.app */;
+			productType = "com.apple.product-type.application";
+		};
+		269791FC222E622A004250BD /* FBYWiFiAutomaticConnectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26979214222E622A004250BD /* Build configuration list for PBXNativeTarget "FBYWiFiAutomaticConnectionTests" */;
+			buildPhases = (
+				269791F9222E622A004250BD /* Sources */,
+				269791FA222E622A004250BD /* Frameworks */,
+				269791FB222E622A004250BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				269791FF222E622A004250BD /* PBXTargetDependency */,
+			);
+			name = FBYWiFiAutomaticConnectionTests;
+			productName = FBYWiFiAutomaticConnectionTests;
+			productReference = 269791FD222E622A004250BD /* FBYWiFiAutomaticConnectionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		26979207222E622A004250BD /* FBYWiFiAutomaticConnectionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26979217222E622A004250BD /* Build configuration list for PBXNativeTarget "FBYWiFiAutomaticConnectionUITests" */;
+			buildPhases = (
+				26979204222E622A004250BD /* Sources */,
+				26979205222E622A004250BD /* Frameworks */,
+				26979206222E622A004250BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2697920A222E622A004250BD /* PBXTargetDependency */,
+			);
+			name = FBYWiFiAutomaticConnectionUITests;
+			productName = FBYWiFiAutomaticConnectionUITests;
+			productReference = 26979208222E622A004250BD /* FBYWiFiAutomaticConnectionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		269791DD222E6226004250BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = fby;
+				TargetAttributes = {
+					269791E4222E6226004250BD = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.AccessWiFi = {
+								enabled = 0;
+							};
+							com.apple.HotspotConfiguration = {
+								enabled = 1;
+							};
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					269791FC222E622A004250BD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 269791E4222E6226004250BD;
+					};
+					26979207222E622A004250BD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 269791E4222E6226004250BD;
+					};
+				};
+			};
+			buildConfigurationList = 269791E0222E6226004250BD /* Build configuration list for PBXProject "FBYWiFiAutomaticConnection" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 269791DC222E6226004250BD;
+			productRefGroup = 269791E6222E6226004250BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				269791E4222E6226004250BD /* FBYWiFiAutomaticConnection */,
+				269791FC222E622A004250BD /* FBYWiFiAutomaticConnectionTests */,
+				26979207222E622A004250BD /* FBYWiFiAutomaticConnectionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		269791E3222E6226004250BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				269791F5222E622A004250BD /* LaunchScreen.storyboard in Resources */,
+				269791F2222E622A004250BD /* Assets.xcassets in Resources */,
+				2697922E222F6DE9004250BD /* signal_def.tiff in Resources */,
+				2697922F222F6DE9004250BD /* pointer.tiff in Resources */,
+				269791F0222E6226004250BD /* Main.storyboard in Resources */,
+				26979230222F6DE9004250BD /* table.tiff in Resources */,
+				26979232222F6DE9004250BD /* download_def.tiff in Resources */,
+				26979231222F6DE9004250BD /* Upload_def.tiff in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		269791FB222E622A004250BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26979206222E622A004250BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		269791E1222E6226004250BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				269791ED222E6226004250BD /* ViewController.m in Sources */,
+				269791F8222E622A004250BD /* main.m in Sources */,
+				26979223222F69A9004250BD /* SignalView.m in Sources */,
+				269791EA222E6226004250BD /* AppDelegate.m in Sources */,
+				26979220222F6300004250BD /* NSString+NormalMethod.m in Sources */,
+				26979227222F69F1004250BD /* SpeedController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		269791F9222E622A004250BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26979202222E622A004250BD /* FBYWiFiAutomaticConnectionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26979204222E622A004250BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2697920D222E622A004250BD /* FBYWiFiAutomaticConnectionUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		269791FF222E622A004250BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 269791E4222E6226004250BD /* FBYWiFiAutomaticConnection */;
+			targetProxy = 269791FE222E622A004250BD /* PBXContainerItemProxy */;
+		};
+		2697920A222E622A004250BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 269791E4222E6226004250BD /* FBYWiFiAutomaticConnection */;
+			targetProxy = 26979209222E622A004250BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		269791EE222E6226004250BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				269791EF222E6226004250BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		269791F3222E622A004250BD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				269791F4222E622A004250BD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2697920F222E622A004250BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		26979210222E622A004250BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		26979212222E622A004250BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FBYWiFiAutomaticConnection/FBYWiFiAutomaticConnection.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QWXF6GB4AV;
+				INFOPLIST_FILE = FBYWiFiAutomaticConnection/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.espressif.WiFiConnection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		26979213222E622A004250BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FBYWiFiAutomaticConnection/FBYWiFiAutomaticConnection.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QWXF6GB4AV;
+				INFOPLIST_FILE = FBYWiFiAutomaticConnection/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.espressif.WiFiConnection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		26979215222E622A004250BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39D66729TZ;
+				INFOPLIST_FILE = FBYWiFiAutomaticConnectionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fby.FBYWiFiAutomaticConnectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FBYWiFiAutomaticConnection.app/FBYWiFiAutomaticConnection";
+			};
+			name = Debug;
+		};
+		26979216222E622A004250BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39D66729TZ;
+				INFOPLIST_FILE = FBYWiFiAutomaticConnectionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fby.FBYWiFiAutomaticConnectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FBYWiFiAutomaticConnection.app/FBYWiFiAutomaticConnection";
+			};
+			name = Release;
+		};
+		26979218222E622A004250BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39D66729TZ;
+				INFOPLIST_FILE = FBYWiFiAutomaticConnectionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fby.FBYWiFiAutomaticConnectionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FBYWiFiAutomaticConnection;
+			};
+			name = Debug;
+		};
+		26979219222E622A004250BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39D66729TZ;
+				INFOPLIST_FILE = FBYWiFiAutomaticConnectionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fby.FBYWiFiAutomaticConnectionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FBYWiFiAutomaticConnection;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		269791E0222E6226004250BD /* Build configuration list for PBXProject "FBYWiFiAutomaticConnection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2697920F222E622A004250BD /* Debug */,
+				26979210222E622A004250BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26979211222E622A004250BD /* Build configuration list for PBXNativeTarget "FBYWiFiAutomaticConnection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26979212222E622A004250BD /* Debug */,
+				26979213222E622A004250BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26979214222E622A004250BD /* Build configuration list for PBXNativeTarget "FBYWiFiAutomaticConnectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26979215222E622A004250BD /* Debug */,
+				26979216222E622A004250BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26979217222E622A004250BD /* Build configuration list for PBXNativeTarget "FBYWiFiAutomaticConnectionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26979218222E622A004250BD /* Debug */,
+				26979219222E622A004250BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 269791DD222E6226004250BD /* Project object */;
+}
