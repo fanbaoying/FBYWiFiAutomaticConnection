@@ -47,27 +47,61 @@ typedef void(^ResultBlock)(float downstreamSpeed,float upstreamSpeed);
 #pragma mark  ----  自定义函数
 //获取信号强度
 +(void)getSignalStrength:(void(^)(float signalStrength))resultBlock{
-    
-    UIApplication *app = [UIApplication sharedApplication];
-    //如果是Iphone X, NSArray *subviews = [[[[application valueForKeyPath:@"_statusBar"] valueForKeyPath:@"_statusBar"] valueForKeyPath:@"foregroundView"] subviews];
-    NSArray *subviews = [[[app valueForKey:@"statusBar"] valueForKey:@"foregroundView"] subviews];
-    NSString *dataNetworkItemView = nil;
-    
-    for (id subview in subviews) {
-        
-        if([subview isKindOfClass:[NSClassFromString(@"UIStatusBarDataNetworkItemView") class]]) {
-            
-            dataNetworkItemView = subview;
-            break;
-        }
-    }
-    
-    int signalStrength = [[dataNetworkItemView valueForKey:@"_wifiStrengthBars"] intValue];
-    
+    int signalStrength = [[SpeedController sharedManager] getWifiSignalStrength];
+    NSLog(@"signalStrength: %d", signalStrength);
     //获取到的信号强度最大值为3，所以除3得到百分比
     float signalStrengthTwo = signalStrength / 3.00;
     
     resultBlock(signalStrengthTwo);
+}
+
+- (int)getWifiSignalStrength{
+    
+    int signalStrength = 0;
+    //        判断是否为iOS 13
+    if (@available(iOS 13.0, *)) {
+        UIStatusBarManager *statusBarManager = [UIApplication sharedApplication].keyWindow.windowScene.statusBarManager;
+         
+        id statusBar = nil;
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+        if ([statusBarManager respondsToSelector:@selector(createLocalStatusBar)]) {
+            UIView *localStatusBar = [statusBarManager performSelector:@selector(createLocalStatusBar)];
+            if ([localStatusBar respondsToSelector:@selector(statusBar)]) {
+                statusBar = [localStatusBar performSelector:@selector(statusBar)];
+            }
+        }
+#pragma clang diagnostic pop
+        if (statusBar) {
+            id currentData = [[statusBar valueForKeyPath:@"_statusBar"] valueForKeyPath:@"currentData"];
+            id wifiEntry = [currentData valueForKeyPath:@"wifiEntry"];
+            if ([wifiEntry isKindOfClass:NSClassFromString(@"_UIStatusBarDataIntegerEntry")]) {
+//                    层级：_UIStatusBarDataNetworkEntry、_UIStatusBarDataIntegerEntry、_UIStatusBarDataEntry
+                
+                signalStrength = [[wifiEntry valueForKey:@"displayValue"] intValue];
+            }
+        }
+    }else {
+        UIApplication *app = [UIApplication sharedApplication];
+        id statusBar = [app valueForKey:@"statusBar"];
+        UIView *foregroundView = [statusBar valueForKey:@"foregroundView"];
+             
+        NSArray *subviews = [foregroundView subviews];
+        NSString *dataNetworkItemView = nil;
+               
+        for (id subview in subviews) {
+            if([subview isKindOfClass:[NSClassFromString(@"UIStatusBarDataNetworkItemView") class]]) {
+                dataNetworkItemView = subview;
+                break;
+            }
+        }
+               
+        signalStrength = [[dataNetworkItemView valueForKey:@"_wifiStrengthBars"] intValue];
+                
+        return signalStrength;
+        
+    }
+    return signalStrength;
 }
 
 //获取下行速度,上行速度（单位是 MB/S）
